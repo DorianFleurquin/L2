@@ -1,0 +1,186 @@
+Exercice 1 : IETF 
+
+presentation: 
+L'IETF pour Internet Engineering Task Force est fondée en 1986.
+Le but de l'agence est de créer des protocoles et pratiques standards à destination des utilisateurs, des fournisseurs de materiel et des concepteurs de logiciels afin d'harmoniser le développement d'internet et de son infrastructure, cette organisation est basée sur le volontariat de ses participants pour prendre part à des réunions dont l'objectif est d'écrire de la documentation technique publique. 
+
+sujet-internet of things(IOT): 
+
+comme son nom l'indique, l'IOT(internet des choses/objets) est composée de tous les appareils connectés à internet(assistants vocaux,home sec, montres). La création de bonnes pratiques de sécurité est d'autant plus critique que ces machines ont une présence physique dans les domiciles privés et même sur les personnes(montres, capteurs hr,lunettes camera).
+L'IETF à crée un groupe de conseil spécialement dédié à L'IOT: le IETF IOT Directorate.
+
+Certains des travaux de ce groupe incluent sans s'y limiter:
+
+-L'organisation de hackathons autour de la sécurité des appareil IOT
+
+-le developpment de nouveaux protocols de communcation pour sécuriser le transport des données entre les appareils IOT et internet
+
+-la redaction de documentation technique sur tout le cycle de vie des appareils IOT
+
+Exercice 2 
+1.
+resultats des pings: 
+
+Pinging www.berkeley.edu...
+PING www.berkeley.edu (141.193.213.20) 56(84) bytes of data.
+64 bytes from 141.193.213.20 (141.193.213.20): icmp_seq=1 ttl=52 time=22.8 ms
+64 bytes from 141.193.213.20 (141.193.213.20): icmp_seq=2 ttl=52 time=22.9 ms
+64 bytes from 141.193.213.20 (141.193.213.20): icmp_seq=3 ttl=52 time=22.8 ms
+64 bytes from 141.193.213.20 (141.193.213.20): icmp_seq=4 ttl=52 time=23.0 ms
+
+--- www.berkeley.edu ping statistics ---
+4 packets transmitted, 4 received, 0% packet loss, time 3004ms
+rtt min/avg/max/mdev = 22.768/22.886/23.015/0.091 ms
+
+Pinging www.mit.edu...
+PING e9566.dscb.akamaiedge.net (23.39.241.125) 56(84) bytes of data.
+64 bytes from a23-39-241-125.deploy.static.akamaitechnologies.com (23.39.241.125): icmp_seq=1 ttl=57 time=15.4 ms
+64 bytes from a23-39-241-125.deploy.static.akamaitechnologies.com (23.39.241.125): icmp_seq=2 ttl=57 time=15.8 ms
+64 bytes from a23-39-241-125.deploy.static.akamaitechnologies.com (23.39.241.125): icmp_seq=3 ttl=57 time=15.8 ms
+64 bytes from a23-39-241-125.deploy.static.akamaitechnologies.com (23.39.241.125): icmp_seq=4 ttl=57 time=15.5 ms
+
+--- e9566.dscb.akamaiedge.net ping statistics ---
+4 packets transmitted, 4 received, 0% packet loss, time 3005ms
+rtt min/avg/max/mdev = 15.438/15.639/15.814/0.152 ms
+
+Pinging www.uva.nl...
+PING uvacms-prd-fe-redir.lb.uva.nl (145.18.11.145) 56(84) bytes of data.
+
+--- uvacms-prd-fe-redir.lb.uva.nl ping statistics ---
+4 packets transmitted, 0 received, 100% packet loss, time 3080ms
+
+
+Pinging www.sydney.edu.au...
+PING e37219.dsca.akamaiedge.net (2.16.165.106) 56(84) bytes of data.
+64 bytes from a2-16-165-106.deploy.static.akamaitechnologies.com (2.16.165.106): icmp_seq=1 ttl=57 time=15.4 ms
+64 bytes from a2-16-165-106.deploy.static.akamaitechnologies.com (2.16.165.106): icmp_seq=2 ttl=57 time=15.6 ms
+64 bytes from a2-16-165-106.deploy.static.akamaitechnologies.com (2.16.165.106): icmp_seq=3 ttl=57 time=15.3 ms
+64 bytes from a2-16-165-106.deploy.static.akamaitechnologies.com (2.16.165.106): icmp_seq=4 ttl=57 time=15.6 ms
+
+--- e37219.dsca.akamaiedge.net ping statistics ---
+4 packets transmitted, 4 received, 0% packet loss, time 3005ms
+rtt min/avg/max/mdev = 15.318/15.471/15.610/0.115 ms
+
+Pinging www.ucc.edu.gh...
+PING ucc.edu.gh (156.38.97.11) 56(84) bytes of data.
+64 bytes from 156.38.97.11 (156.38.97.11): icmp_seq=1 ttl=47 time=138 ms
+64 bytes from 156.38.97.11 (156.38.97.11): icmp_seq=2 ttl=47 time=138 ms
+64 bytes from 156.38.97.11 (156.38.97.11): icmp_seq=3 ttl=47 time=137 ms
+64 bytes from 156.38.97.11 (156.38.97.11): icmp_seq=4 ttl=47 time=138 ms
+
+--- ucc.edu.gh ping statistics ---
+4 packets transmitted, 4 received, 0% packet loss, time 3002ms
+rtt min/avg/max/mdev = 137.396/137.600/137.813/0.149 ms
+
+
+la distance entre le MIT et Brest est de 5077km, elle est parcourue(allez-retour) en 3000ms donc la durée de transmission en allez-simple est d'environ 1500ms environ(0,3ms par kilomètre) cependant, cette durée est variable en fonction de la direction et du nombre de relais entre l'origine et la destination ainsi que la techologie qui les relie(fibre/ADSL)   
+
+
+2. 
+
+resultats des traceroutes: 
+
+Performing traceroute to www.berkeley.edu...
+traceroute to www.berkeley.edu (141.193.213.20), 30 hops max, 60 byte packets
+ 1  _gateway (172.18.1.18)  0.466 ms  0.405 ms  0.385 ms
+ 2  forti-brd-lan.univ-brest.fr (172.31.2.20)  0.226 ms  0.205 ms  0.188 ms
+ 3  172.31.1.17 (172.31.1.17)  0.708 ms  0.689 ms  0.669 ms
+ 4  193.51.189.94 (193.51.189.94)  9.182 ms  9.164 ms  9.146 ms
+ 5  et-5-2-1-ren-nr-paris1-rtr-131.noc.renater.fr (193.51.177.174)  14.743 ms  14.724 ms  14.706 ms
+ 6  renater-ias-geant-gw.par.fr.geant.net (83.97.89.9)  15.072 ms  14.990 ms  14.971 ms
+ 7  lag-1-0.rt0.par.fr.geant.net (62.40.98.75)  21.487 ms  21.720 ms  21.657 ms
+ 8  lag-8-0.rt0.lon2.uk.geant.net (62.40.98.106)  21.110 ms  21.254 ms  21.600 ms
+ 9  lag-2-0.rt0.lon.uk.geant.net (62.40.98.64)  21.579 ms  21.243 ms  21.180 ms
+10  ae3-0.mx1.lon.uk.geant.net (62.40.98.61)  21.996 ms  21.625 ms  21.573 ms
+11  * * *
+12  141.101.71.107 (141.101.71.107)  21.882 ms 141.101.71.2 (141.101.71.2)  23.080 ms 141.101.71.93 (141.101.71.93)  83.242 ms
+13  141.193.213.20 (141.193.213.20)  22.655 ms  22.132 ms  22.472 ms
+
+Performing traceroute to www.mit.edu...
+traceroute to www.mit.edu (23.39.241.125), 30 hops max, 60 byte packets
+ 1  _gateway (172.18.1.18)  0.444 ms  0.461 ms  0.440 ms
+ 2  forti-brd-lan.univ-brest.fr (172.31.2.20)  0.256 ms  0.234 ms  0.214 ms
+ 3  172.31.1.17 (172.31.1.17)  0.361 ms  0.336 ms  0.526 ms
+ 4  193.51.189.94 (193.51.189.94)  9.521 ms  9.503 ms  9.359 ms
+ 5  et-5-2-1-ren-nr-paris1-rtr-131.noc.renater.fr (193.51.177.174)  15.266 ms  15.249 ms  15.212 ms
+ 6  et-5-0-1-ren-nr-paris2-rtr-131.noc.renater.fr (193.55.204.195)  15.193 ms et-4-0-1-ren-nr-paris2-rtr-131.noc.renater.fr (193.55.204.193)  15.580 ms et-5-0-1-ren-nr-paris2-rtr-131.noc.renater.fr (193.55.204.195)  15.531 ms
+ 7  193.51.189.109 (193.51.189.109)  19.252 ms  19.230 ms  19.212 ms
+
+
+
+
+Performing traceroute to www.vu.nl...
+traceroute to www.vu.nl (52.232.69.102), 30 hops max, 60 byte packets
+ 1  _gateway (172.18.1.18)  0.623 ms  0.574 ms  0.556 ms
+ 2  forti-brd-lan.univ-brest.fr (172.31.2.20)  0.242 ms  0.225 ms  0.208 ms
+ 3  172.31.1.17 (172.31.1.17)  0.546 ms  0.470 ms  0.453 ms
+ 4  193.51.189.94 (193.51.189.94)  9.307 ms  9.290 ms  9.364 ms
+ 5  et-5-2-1-ren-nr-paris1-rtr-131.noc.renater.fr (193.51.177.174)  15.032 ms  15.015 ms  14.997 ms
+ 6  et-4-0-1-ren-nr-paris2-rtr-131.noc.renater.fr (193.55.204.193)  15.587 ms et-5-0-1-ren-nr-paris2-rtr-131.noc.renater.fr (193.55.204.195)  15.484 ms et-4-0-1-ren-nr-paris2-rtr-131.noc.renater.fr (193.55.204.193)  15.465 ms
+ 7  ae62-0.par02-96cbe-1a.ntwk.msn.net (104.44.13.206)  15.316 ms  15.326 ms  15.283 ms
+ 8  ae21-0.icr01.par30.ntwk.msn.net (104.44.236.91)  15.705 ms ae22-0.icr01.par21.ntwk.msn.net (104.44.236.95)  18.232 ms ae21-0.icr01.par30.ntwk.msn.net (104.44.236.91)  15.604 ms
+ 9  be-120-0.ibr02.par21.ntwk.msn.net (104.44.11.247)  91.987 ms * *
+10  be-7-0.ibr01.ewr30.ntwk.msn.net (104.44.16.19)  23.576 ms be-9-0.ibr02.pnq01.ntwk.msn.net (104.44.16.145)  23.478 ms be-4-0.ibr01.ams21.ntwk.msn.net (104.44.17.53)  24.050 ms
+11  ae126-0.icr04.ams30.ntwk.msn.net (104.44.23.225)  23.360 ms ae126-0.icr04.ams21.ntwk.msn.net (104.44.23.247)  23.613 ms ae120-0.icr01.ams21.ntwk.msn.net (104.44.22.242)  23.705 ms
+
+
+
+Performing traceroute to www.ucl.ac.uk...
+traceroute to www.ucl.ac.uk (104.18.32.18), 30 hops max, 60 byte packets
+ 1  _gateway (172.18.1.18)  0.498 ms  0.571 ms  0.553 ms
+ 2  forti-brd-lan.univ-brest.fr (172.31.2.20)  0.407 ms  0.389 ms  0.372 ms
+ 3  172.31.1.17 (172.31.1.17)  0.484 ms  0.721 ms  0.450 ms
+ 4  193.51.189.94 (193.51.189.94)  9.600 ms  9.584 ms  9.567 ms
+ 5  et-5-2-1-ren-nr-paris1-rtr-131.noc.renater.fr (193.51.177.174)  14.986 ms  14.970 ms  14.954 ms
+ 6  renater-ias-geant-gw.par.fr.geant.net (83.97.89.9)  14.937 ms  15.066 ms  15.020 ms
+ 7  lag-1-0.rt0.par.fr.geant.net (62.40.98.75)  21.577 ms  21.558 ms  21.630 ms
+ 8  lag-8-0.rt0.lon2.uk.geant.net (62.40.98.106)  21.581 ms  21.003 ms  21.050 ms
+ 9  lag-2-0.rt0.lon.uk.geant.net (62.40.98.64)  21.528 ms  21.610 ms  21.061 ms
+10  ae3-0.mx1.lon.uk.geant.net (62.40.98.61)  21.922 ms  21.920 ms  21.328 ms
+11  * * *
+12  141.101.71.97 (141.101.71.97)  22.546 ms 141.101.71.61 (141.101.71.61)  22.476 ms 141.101.71.2 (141.101.71.2)  22.785 ms
+13  104.18.32.18 (104.18.32.18)  22.481 ms  22.435 ms  22.601 ms
+
+Performing traceroute to www.sydney.edu.au...
+traceroute to www.sydney.edu.au (95.100.252.139), 30 hops max, 60 byte packets
+ 1  _gateway (172.18.1.18)  0.434 ms  0.383 ms  0.365 ms
+ 2  forti-brd-lan.univ-brest.fr (172.31.2.20)  0.228 ms  0.212 ms  0.197 ms
+ 3  172.31.1.17 (172.31.1.17)  0.530 ms  0.515 ms  0.500 ms
+ 4  193.51.189.94 (193.51.189.94)  9.604 ms  9.035 ms  9.571 ms
+ 5  et-5-2-1-ren-nr-paris1-rtr-131.noc.renater.fr (193.51.177.174)  15.426 ms  15.411 ms  15.386 ms
+ 6  et-5-0-1-ren-nr-paris2-rtr-131.noc.renater.fr (193.55.204.195)  15.370 ms et-4-0-1-ren-nr-paris2-rtr-131.noc.renater.fr (193.55.204.193)  15.392 ms et-5-0-1-ren-nr-paris2-rtr-131.noc.renater.fr (193.55.204.195)  15.255 ms
+ 7  * * *
+ 8  a95-100-252-139.deploy.static.akamaitechnologies.com (95.100.252.139)  15.850 ms  15.834 ms  15.819 ms
+
+Performing traceroute to www.ucc.edu.gh...
+traceroute to www.ucc.edu.gh (156.38.97.11), 30 hops max, 60 byte packets
+ 1  _gateway (172.18.1.18)  0.414 ms  0.364 ms  0.346 ms
+ 2  forti-brd-lan.univ-brest.fr (172.31.2.20)  0.219 ms  0.202 ms  0.185 ms
+ 3  172.31.1.17 (172.31.1.17)  0.439 ms  0.419 ms  0.402 ms
+ 4  193.51.189.94 (193.51.189.94)  9.520 ms  9.504 ms  9.488 ms
+ 5  et-5-2-1-ren-nr-paris1-rtr-131.noc.renater.fr (193.51.177.174)  14.815 ms  14.797 ms  14.779 ms
+ 6  renater-lb1.mx1.par.fr.geant.net (62.40.124.69)  14.889 ms  14.808 ms  14.791 ms
+ 7  lag-1-0.rt0.par.fr.geant.net (62.40.98.75)  21.602 ms  21.626 ms  21.568 ms
+ 8  lag-8-0.rt0.lon2.uk.geant.net (62.40.98.106)  21.528 ms  21.132 ms  21.115 ms
+ 9  lag-2-0.rt0.lon.uk.geant.net (62.40.98.64)  21.479 ms  21.612 ms  21.571 ms
+10  ae3-0.mx1.lon.uk.geant.net (62.40.98.61)  22.201 ms  22.278 ms  22.257 ms
+11  wacren-gw.mx1.lon.uk.geant.org (62.40.125.234)  22.146 ms  21.667 ms  22.111 ms
+12  if-xe-0-0-1-0.aggr-lag.as37288.wacren.net (196.216.188.145)  124.257 ms  124.734 ms  124.247 ms
+13  ixpn-lagos.dolphintelecom.net (196.216.148.46)  124.246 ms  124.287 ms  123.895 ms
+14  169.239.189.197 (169.239.189.197)  123.565 ms 41.242.114.56 (41.242.114.56)  136.932 ms  136.766 ms
+15  41.242.112.116 (41.242.112.116)  123.830 ms  123.577 ms 41.242.115.228 (41.242.115.228)  124.334 ms
+16  * * *
+17  41-204-60-117-dedicated.4u.com.gh (41.204.60.117)  144.041 ms  144.069 ms  144.109 ms
+18  41-204-60-118-dedicated.4u.com.gh (41.204.60.118)  143.589 ms  143.648 ms  143.612 ms
+19  156.38.110.11 (156.38.110.11)  138.234 ms  137.943 ms  137.483 ms
+20  156.38.97.11 (156.38.97.11)  137.628 ms  137.842 ms  137.602 ms
+
+2. après analyse des adresses ip, il semble que le trafic à destination de l'Amerique du nord soit centralisé à paris avant de traverser l'atlantique
+
+le trafic a destination du Ghana passe également par paris avant d'émerger au sud du nigeria
+
+
+
+
+
+
