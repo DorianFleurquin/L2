@@ -1,0 +1,27 @@
+1)
+
+	SELECT nom_adherent FROM ADHERENT_ECOLE; 
+
+2)
+
+
+	SELECT nom_instrument FROM INSTRUMENT;
+3)
+	
+
+	SELECT adresse_adherent FROM ADHERENT_ECOLE WHERE num_adherent = 15;
+4) 
+
+	SELECT num_adherent FROM `ADHERENT_ECOLE` WHERE Nom_adherent = 'DUPONT';
+5)
+
+6)
+	SELECT nom_instrument FROM INSTRUMENT  JOIN JOUE ON JOUE.Num_instrument = INSTRUMENT.Num_instrument JOIN ADHERENT_ECOLE ON JOUE.Num_adherent = ADHERENT_ECOLE.Num_adherent WHERE ADHERENT_ECOLE.Num_adherent = 15; 
+7)
+
+	SELECT ADHERENT_ECOLE.Nom_adherent FROM ADHERENT_ECOLE JOIN SUIT_COURS ON ADHERENT_ECOLE.Num_adherent = SUIT_COURS.Num_adherent JOIN COURS ON SUIT_COURS.Num_cours = COURS.Num_cours WHERE COURS.Num_cours = 6;
+8) 
+	SELECT DISTINCT COURS.Nom_cours FROM COURS JOIN SUIT_COURS ON COURS.Num_cours = SUIT_COURS.Num_cours JOIN ADHERENT_ECOLE ON SUIT_COURS.Num_adherent = ADHERENT_ECOLE.Num_adherent JOIN JOUE ON ADHERENT_ECOLE.Num_adherent = JOUE.Num_adherent JOIN INSTRUMENT ON JOUE.Num_instrument = INSTRUMENT.Num_instrument WHERE INSTRUMENT.Nom_instrument = 'piano';
+9)
+
+	SELECT DISTINCT INSTRUMENT.Nom_instrument FROM INSTRUMENT JOIN JOUE ON INSTRUMENT.Num_instrument = JOUE.Num_instrument JOIN ADHERENT_ECOLE ON JOUE.Num_adherent = ADHERENT_ECOLE.Num_adherent JOIN SUIT_COURS ON ADHERENT_ECOLE.Num_adherent = SUIT_COURS.Num_adherent JOIN COURS ON SUIT_COURS.Num_cours = COURS.Num_cours WHERE COURS.Nom_cours = 'GUIT-CLASS'

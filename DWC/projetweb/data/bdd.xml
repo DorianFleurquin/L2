@@ -1,0 +1,151 @@
+
+
+
+<questions>
+    <question>
+        <id>0</id>
+        <question_text>generic 0</question_text>
+        <reponses>
+            <reponse>
+                answer 1
+            </reponse>
+
+            <reponse>
+                answer 2
+            </reponse>
+                
+            <reponse>
+                answer 3
+            </reponse>
+
+            <bonnes_reponses> 
+                <reponse>
+                    answer 4 
+                </reponse>
+            
+            </bonnes_reponses>
+        </reponses>
+
+        <possible_answers>4</possible_answers>
+
+        <point_count>1</point_count>
+        
+        <image>challenge.png</image>
+
+        <explication>answer 4 was the right answer because it was the right answer it was not 1,2 or even 3</explication>
+
+    </question>
+
+    <question>
+        <id>1</id>
+        <question_text>generic 1</question_text>
+        <reponses>
+            <reponse>
+                Option A
+            </reponse>
+            
+            <reponse>
+                Option B
+            </reponse>
+                
+            <reponse>
+                Option C
+            </reponse>
+
+            <bonnes_reponses> 
+                <reponse>
+                    Option D 
+                </reponse>
+            
+            </bonnes_reponses>
+        </reponses>
+
+        <possible_answers>4</possible_answers>
+
+        <point_count>1</point_count>
+        
+        <image>question1.png</image>
+
+        <explication>Option D is correct because it best fits the criteria outlined in the question.</explication>
+    </question>
+
+    <question>
+        <id>2</id>
+        <question_text>generic 2</question_text>
+        <reponses>
+            <reponse>
+                Choice 1
+            </reponse>
+            
+            <reponse>
+                Choice 2
+            </reponse>
+                
+            <reponse>
+                Choice 3
+            </reponse>
+
+            <bonnes_reponses> 
+                <reponse>
+                    Choice 4 
+                </reponse>
+            
+            </bonnes_reponses>
+        </reponses>
+
+        <possible_answers>4</possible_answers>
+
+        <point_count>2</point_count>
+    
+        <image>question2.png</image>
+
+        <explication>Choice 4 is the correct answer as it accurately addresses the question's requirements.</explication>
+    </question>
+
+    <question>
+        <id>3</id>
+        <question_text>generic 3</question_text>
+        <reponses>
+            <reponse>
+                Answer One
+            </reponse>
+            
+            <reponse>
+                Answer Two
+            </reponse>
+                
+            <reponse>
+                Answer Three
+            </reponse>
+
+            <bonnes_reponses> 
+                <reponse>
+                    Answer Four 
+                </reponse>
+            
+            </bonnes_reponses>
+        </reponses>
+
+        <possible_answers>4</possible_answers>
+
+        <point_count>1</point_count>
+        
+        <image>question3.png</image>
+
+        <explication>Answer Four is correct because it provides the most comprehensive solution compared to the other options.</explication>
+    </question>
+
+
+
+    
+
+
+
+
+
+
+
+
+
+
+</questions>
